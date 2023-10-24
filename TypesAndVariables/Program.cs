@@ -12,6 +12,7 @@ namespace TypesAndVariables
         {
             //ValueTypes
             //Console.WriteLine("Hello World");
+            double number5 = 10.4; //64 bitlik (8 byte) gerçek sayı depolarlar. 1.7E +/- 308 (15 basamak)  arasında değer depolayabilmektedir.
             char character = 'A';
             bool condition = false;
             byte number4 = 255; //0 ile 255 arasında değişen işaretsiz 8 bit (1 bayt) tamsayıları tutar.
@@ -22,6 +23,7 @@ namespace TypesAndVariables
             Console.WriteLine("Number2 is {0}", number2);
             Console.WriteLine("Number3 is {0}", number3);
             Console.WriteLine("Number4 is {0}", number4);
+            Console.WriteLine("Number5 is {0}", number5);
             Console.WriteLine("Character is: {0}", (int)character);
             Console.ReadLine(); 
         }
