@@ -12,6 +12,7 @@ namespace TypesAndVariables
         {
             //ValueTypes
             //Console.WriteLine("Hello World");
+            char character = 'A';
             bool condition = false;
             byte number4 = 255; //0 ile 255 arasında değişen işaretsiz 8 bit (1 bayt) tamsayıları tutar.
             short number3 = 32767; //+ - 32768 e kadar çıkabilen ve tam sayıları tutabilen bir veri tipidir.
@@ -21,6 +22,7 @@ namespace TypesAndVariables
             Console.WriteLine("Number2 is {0}", number2);
             Console.WriteLine("Number3 is {0}", number3);
             Console.WriteLine("Number4 is {0}", number4);
+            Console.WriteLine("Character is: {0}", (int)character);
             Console.ReadLine(); 
         }
     }
