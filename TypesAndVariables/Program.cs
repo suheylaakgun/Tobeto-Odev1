@@ -13,6 +13,7 @@ namespace TypesAndVariables
             //ValueTypes
             //Console.WriteLine("Hello World");
             double number5 = 10.4; //64 bitlik (8 byte) gerçek sayı depolarlar. 1.7E +/- 308 (15 basamak)  arasında değer depolayabilmektedir.
+            decimal number6 = 10.4m; //sayı sonuna eklenen harf m ya da M olabilir. 29 anlamlı basamağı destekler ve 7,9228 x 10^28'den büyük değerleri temsil edebilir. Özellikle çok sayıda basamak gerektiren ancak yuvarlama hatalarına dayanamayan finansal hesaplamalar için uygundur. varsayılan değeri Decimal 0'dır.
             char character = 'A';
             bool condition = false;
             byte number4 = 255; //0 ile 255 arasında değişen işaretsiz 8 bit (1 bayt) tamsayıları tutar.
