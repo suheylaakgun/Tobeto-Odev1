@@ -25,8 +25,14 @@ namespace TypesAndVariables
             Console.WriteLine("Number3 is {0}", number3);
             Console.WriteLine("Number4 is {0}", number4);
             Console.WriteLine("Number5 is {0}", number5);
+            Console.WriteLine(Days.Friday); //output:Friday
+            Console.WriteLine((int)Days.Friday); //output:9 -index değeri bir önceki elemanın değerine göre değişiklik gösteriyor.
             Console.WriteLine("Character is: {0}", (int)character);
             Console.ReadLine(); 
         }
+    }
+    enum Days
+    {
+        Monday=5,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
     }
 }
