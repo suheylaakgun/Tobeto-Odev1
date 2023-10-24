@@ -10,7 +10,10 @@ namespace TypesAndVariables
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            //ValueTypes
+            //Console.WriteLine("Hello World");
+            int number1 = 2147483647; //-2147483648 ile 2147483647 arasındaki sayılardan oluşabilir.
+            Console.WriteLine("Number1 is {0}", number1);
             Console.ReadLine(); 
         }
     }
