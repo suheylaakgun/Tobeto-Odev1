@@ -10,30 +10,24 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1den 5e kadar sayı artış");
-            for (int i = 1; i <= 5; i++)
+            //ForLoop();
+            int number = 100;
+            while (number >=0) 
             {
-                Console.WriteLine(i);   
+                Console.WriteLine(number);
+                number--;
             }
-
-            Console.WriteLine("1den 5e kadar tek sayı artış");
-            for (int i = 1; i <= 5; i+=2)
-            {
-                Console.WriteLine(i);
-            }
-
-            Console.WriteLine("0dan 5e kadar çift sayı artış");
-            for (int i = 0; i <= 5; i=i+2)
-            {
-                Console.WriteLine(i);
-            }
-
-            Console.WriteLine("5ten 1e kadar sayı azalış");
-            for (int i = 5; i >= 1; i--)
-            {
-                Console.WriteLine(i);
-            }
+            Console.WriteLine("Now number is {0}", number);
             Console.ReadLine();
+        }
+
+        private static void ForLoop()
+        {
+            for (int i = 100; i >= 0; i=i-2)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("Finished!");
         }
     }
 }
