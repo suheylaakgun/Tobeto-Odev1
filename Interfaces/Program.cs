@@ -5,11 +5,20 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Interfaces
 {
     internal class Program
     {
         static void Main(string[] args)
+        {
+            //InterfacesIntro();
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleServerCustomerDal());
+            Console.ReadLine();
+        }
+
+        private static void InterfacesIntro()
         {
             PersonManager manager = new PersonManager();
             Customer customer = new Customer
@@ -30,8 +39,8 @@ namespace Interfaces
 
             manager.Add(customer);
             manager.Add(student);
-            Console.ReadLine();
         }
+
         interface IPerson
         { 
             int Id { get; set; }
