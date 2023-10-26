@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,26 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
+            PersonManager manager = new PersonManager();
+            Customer customer = new Customer
+            {
+                Id = 1,
+                FirstName = "Engin",
+                LastName = "Demiroğ",
+                Address = "Ankara"
+            };
+
+            Student student = new Student
+            {
+                Id = 1,
+                FirstName = "Derin",
+                LastName = "Demiroğ",
+                Department = "Computer Sciences"
+            };
+
+            manager.Add(customer);
+            manager.Add(student);
+            Console.ReadLine();
         }
         interface IPerson
         { 
@@ -31,6 +52,14 @@ namespace Interfaces
             public string FirstName { get; set; }
             public string LastName { get; set; }
             public string Department { get; set; }
+        }
+
+        class PersonManager
+        { 
+            public void Add(IPerson person) 
+            {
+                Console.WriteLine(person.FirstName);
+            }
         }
     }
 }
